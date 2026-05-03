@@ -1,0 +1,238 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #f4f4f4;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #76dce5;
+    color: rgb(37, 65, 27);
+}
+
+/* Hero Section */
+#home {
+    height: 100vh;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #52018f;
+    padding: 10px 20px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #bc670c;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+}
+
+/* Add Backgrounds to Sections */
+#courses, #about, #contact {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+    padding: 80px 20px;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Contact Section - Fix Visibility */
+#contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    background: #333;
+    color: white;
+}
+
+/* Login Section */
+#login {
+    height: 100vh;
+    background: url("C:/Users/zedan/Downloads/photo_2025-02-23_20-50-20.jpg") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+    color: white;
+}
+
+/* Form Styling */
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-group label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    font-size: 14px;
+    color: #FFD700;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #FFD700;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7eb009;
+}
+
+/* Hover Effects for Specific Sections */
+#home:hover, #about:hover, #contact:hover, #courses:hover, #login:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.02);
+}
+
+/* Button Hover Effects */
+#home .btn:hover, #about .btn:hover, #contact .btn:hover, #courses .btn:hover, #login .btn:hover,
+#home button:hover, #about button:hover, #contact button:hover, #courses button:hover, #login button:hover {
+    background: #dfb80b;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
